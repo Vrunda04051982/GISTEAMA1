@@ -26,3 +26,4 @@ E:\Vrunda_Hackathon\GISTEAMA1\GISTEAMA1\bin\System.Net.Http.Formatting.xml
 E:\Vrunda_Hackathon\GISTEAMA1\GISTEAMA1\bin\System.Web.Http.xml
 E:\Vrunda_Hackathon\GISTEAMA1\GISTEAMA1\bin\System.Web.Http.WebHost.xml
 E:\Vrunda_Hackathon\GISTEAMA1\GISTEAMA1\bin\Twilio.WebApi.xml
+E:\Vrunda_Hackathon\GISTEAMA1\GISTEAMA1\obj\Debug\GISTEAMA1.csprojResolveAssemblyReference.cache

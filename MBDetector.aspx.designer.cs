@@ -49,6 +49,15 @@ namespace GISTEAMA1 {
         protected global::System.Web.UI.WebControls.RadioButton rdbQRCoder;
         
         /// <summary>
+        /// lblCardDetails1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow lblCardDetails1;
+        
+        /// <summary>
         /// lblCardHolderName control.
         /// </summary>
         /// <remarks>
@@ -65,6 +74,15 @@ namespace GISTEAMA1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblExpiryDate;
+        
+        /// <summary>
+        /// lblCardDetails2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow lblCardDetails2;
         
         /// <summary>
         /// txtName control.
@@ -85,6 +103,15 @@ namespace GISTEAMA1 {
         protected global::System.Web.UI.WebControls.TextBox txtExpDate;
         
         /// <summary>
+        /// lblCardDetails3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow lblCardDetails3;
+        
+        /// <summary>
         /// lblAccount control.
         /// </summary>
         /// <remarks>
@@ -101,6 +128,15 @@ namespace GISTEAMA1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblCVV;
+        
+        /// <summary>
+        /// lblCardDetails4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow lblCardDetails4;
         
         /// <summary>
         /// txtAccount control.

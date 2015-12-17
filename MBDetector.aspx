@@ -62,19 +62,19 @@
             <tr>
                <td colspan="2"><br /></td>
            </tr>
-           <tr  class="auto_label">
+           <tr id="lblCardDetails1" class="auto_label" runat="server">
                <td><asp:Label ID="lblCardHolderName" runat="server" Text="Card Holder Name"></asp:Label></td>
                <td><asp:Label ID="lblExpiryDate" runat="server" Text="Card Expiry Date"></asp:Label></td>
            </tr>
-           <tr class="auto_textbox">
+           <tr id="lblCardDetails2" class="auto_textbox" runat="server">
                <td><asp:TextBox ID="txtName" runat="server" Width="150px"></asp:TextBox></td>
                <td><asp:TextBox ID="txtExpDate" runat="server" Width="100px"></asp:TextBox></td>
            </tr>
-           <tr  class="auto_label">
+           <tr id="lblCardDetails3" class="auto_label" runat="server">
                <td><asp:Label ID="lblAccount" runat="server" Text="Account No"></asp:Label></td>
                <td><asp:Label ID="lblCVV" runat="server" Text="CVV No"></asp:Label></td>
            </tr>
-             <tr class="auto_textbox">
+             <tr id="lblCardDetails4" class="auto_textbox" runat="server">
                <td><asp:TextBox ID="txtAccount" runat="server" Width="150px"></asp:TextBox></td>
                <td><asp:TextBox ID="txtCVV" runat="server" Width="50px"></asp:TextBox></td>
            </tr>
@@ -86,7 +86,7 @@
            </tr>
              <tr class="auto_Header_text">
                <td colspan="2">
-                   <asp:RadioButton ID="rdbOTP" runat="server" AutoPostBack="true"
+                   <asp:RadioButton ID="rdbOTP" runat="server" 
                        Text="I want to generate One Time Password for my online payment" /></td>             
            </tr>
             <tr>
@@ -102,7 +102,7 @@
           <tr class="auto_Header_text">
                <td colspan="2">
                    <asp:RadioButton ID="rdbFaceDetector" runat="server" AutoPostBack="true"
-                       Text="I want to use my camera for Face Detection for my online payment" /></td>             
+                       Text="I want to use my camera for Face Detection for my online payment" OnCheckedChanged="rdbFaceDetector_CheckedChanged" /></td>             
            </tr>
              <tr>
                <td colspan="2"><br /></td>
@@ -117,7 +117,7 @@
            </tr>
 
              <tr>
-               <td colspan="2" align="center" class="auto_Header_text"><asp:Button ID="btnMakePayment" runat="server" Text="Proceed for Payment" Width="296px" /></td>
+               <td colspan="2" align="center" class="auto_Header_text"><asp:Button ID="btnMakePayment" runat="server" Text="Proceed for Payment" Width="296px" OnClick="btnMakePayment_Click" /></td>
             </tr>
             <tr>
                 <td colspan="2"><hr /></td>
