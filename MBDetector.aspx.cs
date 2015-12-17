@@ -16,7 +16,8 @@ namespace GISTEAMA1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lblMerchant.Text = "Vodafone";
+            lblAmount.Text = "250";
         }
 
         protected void rdbQRCoder_Changed(object sender, EventArgs e)
@@ -55,15 +56,9 @@ namespace GISTEAMA1
             //string Token = "6f5348ac6fdf594401ba7ed122db305f";
 
             var twilio = new TwilioRestClient(AccountID, Token);
-            var message = twilio.SendSmsMessage("+1 228-207-5756", "+919819718463", UniqueID + "One time Password. Please do not share with anyone. Please notify if not done by you.");
-            //Console.WriteLine(message.Sid);
-            //Console.WriteLine(message.Status.ToString());
-
-            //if (message == null)
-            //{
-            //    NotificationServiceFactory.NotificationService.NotifyTechSupport("Error sending SMS to 919819718463", "twilio.SendSmsMessage returned null.\n\n" + message);
-            //    return CreateCustomerResultCode.SmsCommunicationError;
-            //}
+            var message = twilio.SendMessage("+1 228-207-5756", "+919819718463", UniqueID + " One time Password. Please do not share with anyone. Please notify if not done by you.");
+            Console.WriteLine(message.Sid);
+            Console.WriteLine(message.Status.ToString());         
 
             if (message.RestException != null)
             {

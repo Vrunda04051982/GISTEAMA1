@@ -7,26 +7,26 @@
     <title></title>
     <link href="css/style.css" rel="stylesheet" />
  <style type="text/css">
-     .auto_label {
-         font-family : Arial;
-         font-size : medium;
-         font-weight : normal;
+     .auto_Header_text {
+         font-family : Verdana;
+         font-size : x-small;
+         font-weight : bold;
          color:white;
      }
-      .auto_Header_text {
+      .auto_label {
          font-family : Verdana;
-         font-size : medium;
-         font-weight : bold;
+         font-size : x-small;
+         font-weight : normal;
          color:white;
      }
        .auto_textbox {
          font-family : Verdana;
-         font-size :medium;
-         font-weight : bold;
-         color:black;
+         font-size :xx-small;
+         font-weight : normal;
+         color:white;
      }
         .auto_footer {
-         font-family : Arial;
+         font-family : Verdana;
          font-size :xx-small;
          font-weight : normal;
          color:white;
@@ -35,21 +35,9 @@
 </head>
 <body>  
     <form id="form1" runat="server">
-      <%--   <div id="bg">
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <img src="images/bg.jpg" alt=""/>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>--%>
-
-    <div id="container" align="center">
+    <div id="container">
      <div id="dvGenerate" class="signin">
-       <table border="1" width="100%">
+       <table border="1" width="70%" align="center">
            <tr class="auto_Header_text">
                <td colspan="2">Billdesk</td>
            </tr>
@@ -66,7 +54,7 @@
            <tr>
                <td colspan="2"><br /></td>
            </tr>
-           <tr class="auto_label">
+           <tr class="auto_Header_text">
                <td colspan="2">
                    <asp:RadioButton ID="rdbQRCoder" runat="server" AutoPostBack="true" OnCheckedChanged="rdbQRCoder_Changed" 
                        Text="I want to choose the Quick Response Code for my online payment" /></td>             
@@ -79,16 +67,16 @@
                <td><asp:Label ID="lblExpiryDate" runat="server" Text="Card Expiry Date"></asp:Label></td>
            </tr>
            <tr class="auto_textbox">
-               <td><asp:TextBox ID="txtName" runat="server"></asp:TextBox></td>
-               <td><asp:TextBox ID="txtExpDate" runat="server"></asp:TextBox></td>
+               <td><asp:TextBox ID="txtName" runat="server" Width="150px"></asp:TextBox></td>
+               <td><asp:TextBox ID="txtExpDate" runat="server" Width="100px"></asp:TextBox></td>
            </tr>
            <tr  class="auto_label">
                <td><asp:Label ID="lblAccount" runat="server" Text="Account No"></asp:Label></td>
                <td><asp:Label ID="lblCVV" runat="server" Text="CVV No"></asp:Label></td>
            </tr>
              <tr class="auto_textbox">
-               <td><asp:TextBox ID="txtAccount" runat="server"></asp:TextBox></td>
-               <td><asp:TextBox ID="txtCVV" runat="server"></asp:TextBox></td>
+               <td><asp:TextBox ID="txtAccount" runat="server" Width="150px"></asp:TextBox></td>
+               <td><asp:TextBox ID="txtCVV" runat="server" Width="50px"></asp:TextBox></td>
            </tr>
             <tr>
                <td colspan="2"><br /></td>
@@ -96,14 +84,14 @@
            <tr>
                <td colspan="2"><br /></td>
            </tr>
-             <tr class="auto_label">
+             <tr class="auto_Header_text">
                <td colspan="2">
                    <asp:RadioButton ID="rdbOTP" runat="server" AutoPostBack="true"
                        Text="I want to generate One Time Password for my online payment" /></td>             
            </tr>
             <tr>
-               <td class="auto_Header_text"><asp:Button ID="btnGenerate" runat="server" Text="Generate OTP" OnClick="btnGenerate_Click" /></td>
-               <td class="auto_textbox"><asp:TextBox ID="txtOTP" runat="server"></asp:TextBox></td>
+               <td align="center" class="auto_Header_text"><asp:Button ID="btnGenerate" runat="server" Text="Generate OTP" OnClick="btnGenerate_Click" Width="179px" /></td>
+               <td align="center" class="auto_textbox"><asp:TextBox ID="txtOTP" runat="server" Width="100px"></asp:TextBox></td>
            </tr>
            <tr>
                <td colspan="2"> <hr /></td>
@@ -111,7 +99,7 @@
             <tr>
                <td colspan="2"><br /></td>
            </tr>
-          <tr class="auto_label">
+          <tr class="auto_Header_text">
                <td colspan="2">
                    <asp:RadioButton ID="rdbFaceDetector" runat="server" AutoPostBack="true"
                        Text="I want to use my camera for Face Detection for my online payment" /></td>             
@@ -120,7 +108,7 @@
                <td colspan="2"><br /></td>
            </tr>
              <tr>
-               <td colspan="2">
+               <td colspan="2" class="auto_label">
                    <asp:PlaceHolder ID="plhFaceDetector" runat="server"></asp:PlaceHolder>
                </td>
            </tr>
@@ -129,13 +117,8 @@
            </tr>
 
              <tr>
-               <td colspan="2" class="auto_Header_text"><asp:Button ID="btnMakePayment" runat="server" Text="Proceed for Payment" /></td>
+               <td colspan="2" align="center" class="auto_Header_text"><asp:Button ID="btnMakePayment" runat="server" Text="Proceed for Payment" Width="296px" /></td>
             </tr>
-       </table>
-       </div>
-    </div>
-    <div id="dvfooter" class="signin">
-        <table>
             <tr>
                 <td colspan="2"><hr /></td>
             </tr>
@@ -147,12 +130,14 @@
             </tr>
             <tr>
                 <td colspan="2"><hr /></td>
-            </tr>
-            <tr>
-                <td colspan="2"><p>Copyright &copy; TCS-GIS TEAM-A1</p></td>
-            </tr>
-        </table>
+            </tr>   
+           <tr>
+                <td colspan="2" class="auto_footer"><p>Copyright &copy; TCS-GIS TEAM-A1</p></td>
+            </tr>        
+       </table>
+       </div>       
     </div>
+   
     </form>
 </body>
 </html>

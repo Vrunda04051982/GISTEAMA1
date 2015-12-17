@@ -97,7 +97,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="index.html" />
     <Content Include="packages.config" />
+    <Content Include="fonts\Lemon-Regular.ttf" />
+    <Content Include="fonts\Oswald-Bold.ttf" />
+    <Content Include="fonts\Oswald-Light.ttf" />
+    <Content Include="fonts\Oswald-Regular.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

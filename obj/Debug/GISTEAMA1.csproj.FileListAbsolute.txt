@@ -12,7 +12,6 @@ E:\Vrunda_Hackathon\GISTEAMA1\GISTEAMA1\bin\Twilio.Mvc.pdb
 E:\Vrunda_Hackathon\GISTEAMA1\GISTEAMA1\bin\Twilio.Mvc.xml
 E:\Vrunda_Hackathon\GISTEAMA1\GISTEAMA1\bin\Twilio.Twiml.pdb
 E:\Vrunda_Hackathon\GISTEAMA1\GISTEAMA1\bin\Twilio.Twiml.xml
-E:\Vrunda_Hackathon\GISTEAMA1\GISTEAMA1\obj\Debug\GISTEAMA1.csprojResolveAssemblyReference.cache
 E:\Vrunda_Hackathon\GISTEAMA1\GISTEAMA1\obj\Debug\GISTEAMA1.dll
 E:\Vrunda_Hackathon\GISTEAMA1\GISTEAMA1\obj\Debug\GISTEAMA1.pdb
 E:\Vrunda_Hackathon\GISTEAMA1\GISTEAMA1\bin\RestSharp.dll
